@@ -5,7 +5,7 @@ import { Space, Table, Tag } from 'antd';
 const ClientsList = ({ clients }) => {
 
     return <>
-        <div className="container">
+        <div className="container" data-testid="clientsList">
             <h1  className="text-center my-4">Liste des clients</h1>
             <div className="container">
                 <Link className="btn btn-primary btn-sm" to={"/create"}>Créer un client</Link>
@@ -22,7 +22,7 @@ const ClientsList = ({ clients }) => {
                     {
                     clients.map(client => (
                         <tr key={client.id}>
-                            <td><Link to={"/"+client.id}><a href="#">{client.fullName}</a></Link> </td>
+                            <td><Link to={"/"+client.id}>{client.fullName}</Link> </td>
                             <td><Link to={"/"+client.id}>{client.email}</Link></td>
                             <td><Link className="badge badge-primary" to={"/"+client.id}>Détails</Link></td>
                         </tr>

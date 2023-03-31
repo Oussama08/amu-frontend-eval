@@ -1,5 +1,5 @@
 // L'URL sur laquelle votre application web est visitable (à changer si nécessaire)
-export const BASE_URL = "http://localhost:62712/";
+export const BASE_URL = "http://localhost:8080/";
 // L'URL de l'API Supabase à mettre à jour absolument
 export const API_URL = "https://kxasuqadcvhtpdwsktcq.supabase.co/rest/v1";
 // La clé d'API de votre compte Supabase à mettre à jour absolument
